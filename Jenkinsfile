@@ -1,13 +1,2 @@
-@Library('shared-lib') _
-
-pipeline {
-    agent any
-
-    stages {
-        stage('Run Common Build') {
-            steps {
-                commonBuild()
-            }
-        }
-    }
-}
+@Library('jenkins-shared-library') _
+commonBuild()
